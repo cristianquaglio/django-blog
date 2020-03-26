@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'taggit',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
@@ -108,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/dev/topics/i18n/
 
-LANGUAGE_CODE = 'es_AR'
+LANGUAGE_CODE = 'ES'
 
 TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
@@ -130,3 +133,6 @@ EMAIL_HOST_USER = 'cristianquaglio@gmail.com'
 EMAIL_HOST_PASSWORD = 'r1d1m1nt3s'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+# For Sitemap framework
+SITE_ID = 1
